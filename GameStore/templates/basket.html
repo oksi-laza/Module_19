@@ -1,0 +1,24 @@
+{% extends 'menu.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% block pagename %}
+        <h1 align="center">{{ title_h1 }}</h1>
+    {% endblock %}
+
+    {% block content %}
+        <h2>{{ basket_empty }}</h2>
+        <button style="padding: 15px">
+            <a href="{{ main_page }}" style="color: black; text-decoration: none; font-weight: bold">
+                ВЕРНУТЬСЯ<br> НА ГЛАВНУЮ
+            </a>
+        </button>
+    {% endblock %}
+
+</body>
+</html>
